@@ -1,21 +1,10 @@
-**This GitHub repo (<https://github.com/Genymobile/scrcpy>) is the only official
-source for the project. Do not download releases from random websites, even if
-their name contains `scrcpy`.**
-
-# scrcpy (v3.3.4)
-
-<img src="app/data/icon.svg" width="128" height="128" alt="scrcpy" align="right" />
-
-_pronounced "**scr**een **c**o**py**"_
+**This GitHub repo (<https://github.com/Genymobile/scrcpy>) is the official
+source for the project.
 
 This application mirrors Android devices (video and audio) connected via USB or
 [TCP/IP](doc/connection.md#tcpip-wireless) and allows control using the
 computer's keyboard and mouse. It does not require _root_ access or an app
 installed on the device. It works on _Linux_, _Windows_, and _macOS_.
-
-![screenshot](assets/screenshot-debian-600.jpg)
-
-It focuses on:
 
  - **lightness**: native, displays only the device screen
  - **performance**: 30~120fps, depending on the device
@@ -28,7 +17,6 @@ It focuses on:
 
 [lowlatency]: https://github.com/Genymobile/scrcpy/pull/646
 
-Its features include:
  - [audio forwarding](doc/audio.md) (Android 11+)
  - [recording](doc/recording.md)
  - [virtual display](doc/virtual_display.md)
@@ -90,8 +78,8 @@ Note that USB debugging is not required to run scrcpy in [OTG mode](doc/otg.md).
 
 ## Usage examples
 
-There are a lot of options, [documented](#user-documentation) in separate pages.
-Here are just some common examples.
+There are a lot of options, [documented](#user-documentation) in separate pages
+Here are just some common examples
 
  - Capture the screen in H.265 (better quality), limit the size to 1920, limit
    the frame rate to 60fps, disable audio, and control the device by simulating
@@ -102,12 +90,6 @@ Here are just some common examples.
     scrcpy --video-codec=h265 -m1920 --max-fps=60 --no-audio -K  # short version
     ```
 
- - Start VLC in a new virtual display (separate from the device display):
-
-    ```bash
-    scrcpy --new-display=1920x1080 --start-app=org.videolan.vlc
-    ```
-
  - Record the device camera in H.265 at 1920x1080 (and microphone) to an MP4
    file:
 
@@ -115,31 +97,11 @@ Here are just some common examples.
     scrcpy --video-source=camera --video-codec=h265 --camera-size=1920x1080 --record=file.mp4
     ```
 
- - Capture the device front camera and expose it as a webcam on the computer (on
-   Linux):
-
-    ```bash
-    scrcpy --video-source=camera --camera-size=1920x1080 --camera-facing=front --v4l2-sink=/dev/video2 --no-playback
-    ```
-
- - Control the device without mirroring by simulating a physical keyboard and
-   mouse (USB debugging not required):
-
-    ```bash
-    scrcpy --otg
-    ```
-
- - Control the device using gamepad controllers plugged into the computer:
-
-    ```bash
-    scrcpy --gamepad=uhid
-    scrcpy -G  # short version
-    ```
 
 ## User documentation
 
 The application provides a lot of features and configuration options. They are
-documented in the following pages:
+documented in the following pages
 
  - [Connection](doc/connection.md)
  - [Video](doc/video.md)
@@ -168,27 +130,7 @@ documented in the following pages:
 
 [wiki]: https://github.com/Genymobile/scrcpy/wiki
 
-
-## Articles
-
-- [Introducing scrcpy][article-intro]
-- [Scrcpy now works wirelessly][article-tcpip]
-- [Scrcpy 2.0, with audio][article-scrcpy2]
-
-[article-intro]: https://blog.rom1v.com/2018/03/introducing-scrcpy/
-[article-tcpip]: https://www.genymotion.com/blog/open-source-project-scrcpy-now-works-wirelessly/
-[article-scrcpy2]: https://blog.rom1v.com/2023/03/scrcpy-2-0-with-audio/
-
-## Contact
-
-You can open an [issue] for bug reports, feature requests or general questions.
-
-For bug reports, please read the [FAQ](FAQ.md) first, you might find a solution
-to your problem immediately.
-
 [issue]: https://github.com/Genymobile/scrcpy/issues
-
-You can also use:
 
  - Reddit: [`r/scrcpy`](https://www.reddit.com/r/scrcpy)
  - BlueSky: [`@scrcpy.bsky.social`](https://bsky.app/profile/scrcpy.bsky.social)
@@ -197,9 +139,9 @@ You can also use:
 
 ## Donate
 
-I'm [@rom1v](https://github.com/rom1v), the author and maintainer of _scrcpy_.
+ [@rom1v](https://github.com/rom1v), the author and maintainer of _scrcpy_.
 
-If you appreciate this application, you can [support my open source
+If you appreciate this application, you can [support his open source
 work][donate]:
  - [GitHub Sponsors](https://github.com/sponsors/rom1v)
  - [Liberapay](https://liberapay.com/rom1v/)
