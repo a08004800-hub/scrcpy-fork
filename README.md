@@ -1,3 +1,10 @@
+ scrcpy --video-codec=h265 -m1920 --max-fps=240 --no-audio -K --print-fps -Sw
+
+
+
+
+
+
 GitHub repo (<https://github.com/Genymobile/scrcpy>) is the official
 source for the project.
 
