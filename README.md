@@ -1,4 +1,4 @@
-**This GitHub repo (<https://github.com/Genymobile/scrcpy>) is the official
+GitHub repo (<https://github.com/Genymobile/scrcpy>) is the official
 source for the project.
 
 This application mirrors Android devices (video and audio) connected via USB or
